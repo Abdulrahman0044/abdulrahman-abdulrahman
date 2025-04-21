@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Disciplinary Consultant</title>
+    <title>Abdulrahman A.</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1516321310766-78a295b65d38');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
             background-color: #f7fafc;
         }
         .section-padding {
             padding: 4rem 1rem;
         }
         .card {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 0.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 1.5rem;
@@ -30,12 +35,16 @@
         .btn:hover {
             background: #1e3a8a;
         }
-        .project-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 0.375rem;
+        .project-icon {
+            font-size: 2rem;
+            color: #1e40af;
             margin-bottom: 1rem;
+        }
+        header, footer {
+            background: rgba(30, 64, 175, 0.9);
+        }
+        section {
+            background: rgba(255, 255, 255, 0.85);
         }
     </style>
 </head>
@@ -43,7 +52,7 @@
     <!-- Header -->
     <header class="bg-blue-800 text-white">
         <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Consultant Portfolio</h1>
+            <h1 class="text-2xl font-bold">Abdulrahman's Portfolio</h1>
             <nav>
                 <ul class="flex space-x-6">
                     <li><a href="#about" class="hover:underline">About</a></li>
@@ -69,7 +78,7 @@
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">About Me</h2>
             <div class="card">
-                <p class="text-gray-700">I'm a multi-disciplinary consultant with over 6 years of experience delivering cutting-edge solutions in data science, AI, and embedded systems. My work spans AI-powered sentiment analysis, IoT-driven agriculture, and tech-for-good projects like bionic vision systems for the blind. I’ve trained over 1,000 individuals, mentored future tech leaders, and led innovations that drive real-world impact across Africa. My mission is to harness technology for inclusive, sustainable, and impactful solutions.</p>
+                <p class="text-gray-700">Hi! I am Abdulrahman Abdulrahman, a multi-disciplinary individual with over 6 years of experience delivering cutting-edge solutions in data science, AI, and embedded systems. My work spans AI-powered solutions, IoT/Embedded-driven solutions, data analysis, and tech-for-good projects like bionic vision systems for the blind. I’ve trained over 1,000 individuals, mentored future tech leaders, and led innovations that drive real-world impact across Africa. My mission is to harness technology for inclusive, sustainable, and impactful solutions.</p>
             </div>
         </div>
     </section>
@@ -80,64 +89,65 @@
             <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">Current Projects</h2>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1516321310766-78a295b65d38" alt="AI Content Generator" class="project-img">
+                    <i class="fas fa-robot project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">AI-Powered Content Generator</h3>
                     <p class="text-gray-600">Developed a content creation tool that generates blogs, captions, and tweets based on user prompts using advanced NLP models.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1525869811964-5a548ba56d37" alt="Smart Soil Monitoring" class="project-img">
+                    <i class="fas fa-seedling project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Smart Soil Monitoring System (7FarmScale)</h3>
-                    <p class="text-gray-600">Real-time soil monitoring system using ESP32 and sensors to measure pH, NPK, temperature, moisture, and electrical conductivity. (Aug 2024 – Sept 2024)</p>
+                    <p class="text-gray-600">Real-time soil monitoring system using ESP32 and sensors to measure pH, NPK, temperature, moisture, and electrical conductivity.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1592982538443-2e5b4d61e93d" alt="Fish Pond Monitoring" class="project-img">
+                    <i class="fas fa-fish project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Fish Pond Monitoring System (PondaWatts)</h3>
-                    <p class="text-gray-600">IoT-based system to monitor pH, temperature, ammonia levels, and dissolved oxygen in fish ponds. (Aug 2024 – Sept 2024)</p>
+                    <p class="text-gray-600">IoT-based system to monitor pH, temperature, ammonia levels, and dissolved oxygen in fish ponds.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1500595046743-ffaa14e803eb" alt="Maize Yield Prediction" class="project-img">
+                    <i class="fas fa-leaf project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Maize Farm Yield Prediction</h3>
                     <p class="text-gray-600">K-Means Clustering model to analyze soil parameters and predict maize yield based on specific conditions.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="BB8 Robot" class="project-img">
+                    <i class="fas fa-dharmachakra project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">BB8-Inspired Robot</h3>
-                    <p class="text-gray-600">Functional self-driving robot capable of remote-controlled movement and object detection. (June 2024 – July 2024)</p>
+                    <p class="text-gray-600">Functional self-driving robot capable of remote-controlled movement and object detection.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a" alt="Medical Chatbot" class="project-img">
+                    <i class="fas fa-comment-medical project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Machine Minds: Medical FAQ Chatbot</h3>
-                    <p class="text-gray-600">Semantic search-RAG application built with Vectara for a medical chatbot using large publicly available datasets. (April 2024 – July 2024)</p>
+                    <p class="text-gray-600">Semantic search-RAG application built with Vectara for a medical chatbot using large publicly available datasets.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1516321310766-78a295b65d38" alt="Organizational Chatbot" class="project-img">
+                    <i class="fas fa-comments project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Organizational Chatbot</h3>
-                    <p class="text-gray-600">Developed a chatbot for an NGO using XAML data, Python, Render, Flowise, web crawling, and Pinecone. (Jan 2024)</p>
+                    <p class="text-gray-600">Developed a chatbot for an NGO using XAML data, Python, Render, Flowise, web crawling, and Pinecone.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1579154393705-d4a60b60d3e2" alt="Synthetic X-ray Data" class="project-img">
+                    <i class="fas fa-x-ray project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Synthmage: Synthetic X-ray Data</h3>
-                    <p class="text-gray-600">Trained 5,000 X-ray images using WGAN and CNN (ResNet) for COVID-19, Pneumonia, and Normal classification. (July 2024 – Aug 2024, Aug 2023 – Oct 2023)</p>
+                    <p class="text-gray-600">Trained 5,000 X-ray images using WGAN and CNN (ResNet) for COVID-19, Pneumonia, and Normal classification.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1516321310766-78a295b65d38" alt="Personal AI Tools" class="project-img">
+                    <i class="fas fa-user-cog project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Personal AI (PAI) Open-Source Tools</h3>
-                    <p class="text-gray-600">Created 100 synthetic datasets for Kwaai PAI Email assistant and developing advanced datasets for system evaluation. (Ongoing)</p>
+                    <p class="text-gray-600">Created 100 synthetic pozbaw
+datasets for Kwaai PAI Email assistant and developing advanced datasets for system evaluation.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1506395332178-83ae92a0aa2b" alt="Flammable Gas Monitoring" class="project-img">
+                    <i class="fas fa-fire-alt project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Fada Go: Flammable Gas Monitoring</h3>
-                    <p class="text-gray-600">Designed a monitoring system with Lucid Chart and created a RESTful API for AI and IoT integration. (Ongoing)</p>
+                    <p class="text-gray-600">Designed a monitoring system with Lucid Chart and created a RESTful API for AI and IoT integration.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1500595046743-ffaa14e803eb" alt="Crop Prediction" class="project-img">
+                    <i class="fas fa-spa project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Digital Crop Prediction</h3>
-                    <p class="text-gray-600">Used Multi-layer Perceptron and Decision Tree models to predict crop yields for Ghana datasets. (Aug 2023)</p>
+                    <p class="text-gray-600">Used Multi-layer Perceptron and Decision Tree models to predict crop yields for Ghana datasets.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Playground Prediction" class="project-img">
+                    <i class="fas fa-tree project-icon"></i>
                     <h3 class="text-xl font-semibold text-blue-600 mb-2">Indian Mysore Road Playground Prediction</h3>
-                    <p class="text-gray-600">Curated Sentinel-2 datasets to predict playgrounds using patterns of green grass in Mysore, India. (Ongoing)</p>
+                    <p class="text-gray-600">Curated Sentinel-2 datasets to predict playgrounds using patterns of green grass in Mysore, India.</p>
                 </div>
             </div>
         </div>
@@ -175,8 +185,8 @@
             <h2 class="text-3xl font-bold text-blue-800 mb-6">Ready to Supercharge Your Project?</h2>
             <p class="text-gray-700 mb-6">Contact me to discuss your project or book a strategy session to explore innovative solutions.</p>
             <div class="flex justify-center space-x-4">
-                <a href="mailto:example@example.com" class="btn">Contact Me</a>
-                <a href="#" class="btn">Book a Strategy Session</a>
+                <a href="mailto:abdulrahamanbabatunde12@gmail.com" class="btn">Contact Me</a>
+                <a href="https://calendly.com/abdulrahamanbabatunde12" class="btn">Book a Strategy Session</a>
             </div>
         </div>
     </section>
@@ -184,7 +194,7 @@
     <!-- Footer -->
     <footer class="bg-blue-800 text-white py-6">
         <div class="container mx-auto text-center">
-            <p>© 2025 Multi-Disciplinary Consultant. All rights reserved.</p>
+            <p>© 2025 Abdulrahman A. . All rights reserved.</p>
         </div>
     </footer>
 </body>
